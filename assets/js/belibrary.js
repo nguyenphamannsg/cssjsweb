@@ -999,27 +999,27 @@ function clog(level, ...args) {
 
 	document.__onclog(level, rtime, str);
 
-	switch (level) {
-		case "DEBG":
-			console.debug.apply(this, out);
-			break;
+	// switch (level) {
+	// 	case "DEBG":
+	// 		console.debug.apply(this, out);
+	// 		break;
 
-		case "WARN":
-			console.warn.apply(this, out);
-			break;
+	// 	case "WARN":
+	// 		console.warn.apply(this, out);
+	// 		break;
 
-		case "ERRR":
-			console.error.apply(this, out);
-			break;
+	// 	case "ERRR":
+	// 		console.error.apply(this, out);
+	// 		break;
 
-		case "CRIT":
-			console.error.apply(this, out);
-			break;
+	// 	case "CRIT":
+	// 		console.error.apply(this, out);
+	// 		break;
 
-		default:
-			console.log.apply(this, out);
-			break;
-	}
+	// 	default:
+	// 		console.log.apply(this, out);
+	// 		break;
+	// }
 }
 
 const popup = {
