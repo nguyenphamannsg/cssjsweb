@@ -16,6 +16,7 @@
 
 	switch ($_SERVER["REQUEST_METHOD"]) {
 		case "GET":
+			// SET PAGE TYPE
 			define("PAGE_TYPE", "NORMAL");
 
 			function showImage(string $path) {
